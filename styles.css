@@ -16,6 +16,11 @@ h2 {
     padding: 10px;
 }
 
+.ads-banner {
+    margin: 0 auto;
+    width: 320px;
+}
+
 .event__wrapper {
     width: 100%;
     max-width: 980px;
