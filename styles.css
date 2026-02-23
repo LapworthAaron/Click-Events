@@ -26,6 +26,41 @@ h2 {
     margin: 0 auto;
 }
 
+.test_table {
+    border: 2px solid #BF4646;
+
+    th {
+        border: 2px solid #BF4646;
+        padding: 5px;
+
+        &:first-child {
+            text-align: left;
+        }
+    }
+
+    .true {
+        color: green;
+    }
+
+    .false {
+        color: red;
+    }
+
+}
+
+.clearBtn {
+    border: 5px solid #7EACB5;
+    background-color: #EDDCC6;
+    width: 100px;
+    height: 40px;
+    cursor:  pointer;
+
+    &:hover {
+        border: 5px solid #EDDCC6;
+        background-color: #BF4646;
+    }
+}
+
 .event__container-wrapper {
     width: 100%;
 }

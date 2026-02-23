@@ -18,7 +18,7 @@ const events = [
 // Attach listeners to the whole document (or any element you want)
 events.forEach(eventName => {
     eventContainer.addEventListener(eventName, e => {
-        console.log(e);
+        // console.log(e);
         // 1. Create a new <p> element
         const p = document.createElement('p');
         // 2. Add text to the <p>
@@ -45,3 +45,31 @@ events.forEach(eventName => {
         }
     });
 });
+
+
+const clearBtn = document.querySelector('.clearBtn');
+clearBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById('eventOutput').innerHTML = '';
+    document.getElementById('eventOutputTouch').innerHTML = '';
+    document.getElementById('eventOutputPointer').innerHTML = '';
+    document.getElementById('eventOutputClick').innerHTML = '';
+})
+
+
+const hasTouchEvents = 'ontouchstart' in window;
+document.querySelector('#test1').innerHTML = hasTouchEvents;
+document.querySelector('#test1').classList.add(hasTouchEvents);
+const isTouchDevice = 'ontouchstart' in document.documentElement;
+document.querySelector('#test2').innerHTML = isTouchDevice;
+document.querySelector('#test2').classList.add(isTouchDevice);
+const hasTouchPoints = navigator.maxTouchPoints > 0;
+document.querySelector('#test3').innerHTML = hasTouchPoints;
+document.querySelector('#test3').classList.add(hasTouchPoints);
+const hasTouchPointer = window.PointerEvent && navigator.maxTouchPoints > 0;
+document.querySelector('#test4').innerHTML = hasTouchPointer;
+document.querySelector('#test4').classList.add(hasTouchPointer);
+
+
+
+
