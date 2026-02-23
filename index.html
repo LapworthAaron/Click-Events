@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+		<title>User interaction events</title>
+	</head>
+	<body>
+		<div class="event__header">
+			<h1 class="event__title">Click and Touch event tracker</h1>
+			<div class="event__copy">Here you can track <code>pointer</code>, <code>click</code> and <code>touch</code> events to see how different devices trigger certain events and how Pointer is the king of all of them.</div>
+			<div class="event__copy">A breakdown of how all these events work can be found further below.</div>
+		</div>
+		<div class="event__wrapper">
+			<div class="event__container-wrapper">
+				<h2>Event Tracking area</h2>
+				<div id="eventContainer" class="event__container">
+					<p  class="event__container-text">Use your input device here</p>
+				</div>
+			</div>
+
+			<div class="event__container-output">
+				<div>
+					<h2>All Events</h2>
+					<div id="eventOutput" class="event__output">
+					</div>
+				</div>
+				<div>
+					<h2>Pointer Events</h2>
+					<div id="eventOutputPointer" class="event__output">
+					</div>
+				</div>
+				<div>
+					<h2>Click Events</h2>
+					<div id="eventOutputClick" class="event__output">
+					</div>
+				</div>
+				<div>
+					<h2>Touch Events</h2>
+					<div id="eventOutputTouch" class="event__output">
+					</div>
+				</div>
+			</div>
+			<div class="event__main">
+				<h1 class="event__title">What gets fired when</h1>
+				<div class="event__copy">Here you can track <code>pointer</code>, <code>click</code> and <code>touch</code> events to see how different devices trigger certain events and how Pointer is the king of all of them.</div>
+				<div class="event__copy">A breakdown of how all these events work can be found further below.</div>
+			</div>
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
